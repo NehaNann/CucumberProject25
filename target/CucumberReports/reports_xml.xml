@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="233.81">
+<testcase classname="Login" name="Successful login with valid credential" time="68.988">
+<system-out><![CDATA[Given User launch chrome browser............................................passed
+When User open  URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enter email as "admin@yourstore.com" and password as "admin".......passed
+And Click on Login..........................................................passed
+Then Page title should be "Dashboard / nopCommerce administration"..........passed
+When User click on Logout link..............................................passed
+Then Page title should be "Your store. Login"...............................passed
+And Close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Successful login with valid credential 2" time="56.478">
+<system-out><![CDATA[Given User launch chrome browser............................................passed
+When User open  URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enter email as "admin@yourstore.com" and password as "admin".......passed
+And Click on Login..........................................................passed
+Then Page title should be "Dashboard / nopCommerce administration"..........passed
+When User click on Logout link..............................................passed
+Then Page title should be "Your store. Login"...............................passed
+And Close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Successful login with valid credential 3" time="107.583">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.2.1', revision: 'ac4d0fdd4a'&#10;System info: host: 'DESKTOP-4MOPTMR', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [26fc62bb41df8b770acf50680fc901db, findElement {using=id, value=Email}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nimmy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58362}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58362/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 26fc62bb41df8b770acf50680fc901db" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User launch chrome browser............................................passed
+When User open  URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enter email as "test@yourstore.com" and password as "admin"........failed
+And Click on Login..........................................................skipped
+Then Page title should be "Dashboard / nopCommerce administration"..........skipped
+When User click on Logout link..............................................skipped
+Then Page title should be "Your store. Login"...............................skipped
+And Close browser...........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Email"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-4MOPTMR', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26fc62bb41df8b770acf50680fc901db, findElement {using=id, value=Email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nimmy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58362}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58362/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 26fc62bb41df8b770acf50680fc901db
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.clear(Unknown Source)
+	at PageObject.LoginPage.enterEmail(LoginPage.java:40)
+	at stepDefination.stepDefinationLoginPage.user_enter_email_as_and_password_as(stepDefinationLoginPage.java:40)
+	at ✽.User enter email as "test@yourstore.com" and password as "admin"(file:///F:/Udemy/GitTestB/CucumberProjectNew/./FeatureFile/LoginFeature.feature:17)
+]]></failure>
+</testcase>
+</testsuite>
